@@ -56,6 +56,29 @@ A personal journal of SQL concepts, code examples, and best practices.
 - [Stored Procedures](10-stored-procedures-triggers/01-stored-procedures.md)
 - [Triggers](10-stored-procedures-triggers/02-triggers.md)
 
+### 11 · Data Analysis Patterns
+- [Data Cleaning](11-data-analysis/01-data-cleaning.md)
+- [Cohort Analysis](11-data-analysis/02-cohort-analysis.md)
+- [Funnel Analysis](11-data-analysis/03-funnel-analysis.md)
+- [A/B Testing in SQL](11-data-analysis/04-ab-testing-sql.md)
+- [KPI Metrics — DAU, MAU, Retention, Churn](11-data-analysis/05-kpi-metrics.md)
+- [Pivot Tables & Crosstab](11-data-analysis/06-pivot-crosstab.md)
+- [Running Totals & Cumulative Metrics](11-data-analysis/07-running-totals-cumulative.md)
+
+### 12 · Real-World SQL Problems
+- [Duplicate Detection & Removal](12-real-world-sql/01-duplicate-detection.md)
+- [Gaps and Islands](12-real-world-sql/02-gaps-and-islands.md)
+- [Date Range Problems](12-real-world-sql/03-date-range-problems.md)
+- [Reading ERDs & Translating to SQL](12-real-world-sql/04-reading-erds.md)
+
+### 13 · SQL for Reporting
+- [Time Series Analysis](13-sql-for-reporting/02-time-series-analysis.md)
+- [Customer Segmentation & RFM](13-sql-for-reporting/03-customer-segmentation.md)
+
+### 14 · Power Platform SQL
+- [T-SQL vs Standard SQL](14-power-platform-sql/01-t-sql-specifics.md)
+- [SQL for Power BI](14-power-platform-sql/02-sql-for-power-bi.md)
+
 ---
 
 > 💡 Each note follows the same structure: What is it → Key Concepts → Code Example → Common Mistakes → Related Topics
