@@ -32,6 +32,7 @@ A personal journal of SQL concepts, code examples, and best practices.
 - [Indexes](05-performance/01-indexes.md)
 - [Views & Materialized Views](05-performance/02-views.md)
 - [Query Optimization](05-performance/03-query-optimization.md)
+- [Table Partitioning](05-performance/04-partitioning.md)
 
 ### 06 · Security
 - [SQL Injection](06-security/01-sql-injection.md)
@@ -64,20 +65,25 @@ A personal journal of SQL concepts, code examples, and best practices.
 - [KPI Metrics — DAU, MAU, Retention, Churn](11-data-analysis/05-kpi-metrics.md)
 - [Pivot Tables & Crosstab](11-data-analysis/06-pivot-crosstab.md)
 - [Running Totals & Cumulative Metrics](11-data-analysis/07-running-totals-cumulative.md)
+- [Sampling in SQL](11-data-analysis/08-sampling-sql.md)
+- [Regex & Pattern Matching](11-data-analysis/09-regex-pattern-matching.md)
 
 ### 12 · Real-World SQL Problems
 - [Duplicate Detection & Removal](12-real-world-sql/01-duplicate-detection.md)
 - [Gaps and Islands](12-real-world-sql/02-gaps-and-islands.md)
 - [Date Range Problems](12-real-world-sql/03-date-range-problems.md)
 - [Reading ERDs & Translating to SQL](12-real-world-sql/04-reading-erds.md)
+- [Self-Referencing Queries](12-real-world-sql/05-self-referencing-queries.md)
 
 ### 13 · SQL for Reporting
+- [Reporting Patterns](13-sql-for-reporting/01-reporting-patterns.md)
 - [Time Series Analysis](13-sql-for-reporting/02-time-series-analysis.md)
 - [Customer Segmentation & RFM](13-sql-for-reporting/03-customer-segmentation.md)
 
 ### 14 · Power Platform SQL
 - [T-SQL vs Standard SQL](14-power-platform-sql/01-t-sql-specifics.md)
 - [SQL for Power BI](14-power-platform-sql/02-sql-for-power-bi.md)
+- [Microsoft Dataverse & SQL](14-power-platform-sql/03-dataverse-sql.md)
 
 ---
 
