@@ -58,6 +58,14 @@ Each folder contains:
 
 ---
 
+## 📈 Progress Summary
+
+- Total Topics Covered: 10+
+- Total SQL Queries Solved: 50+
+- Current Focus: Joins & Aggregations
+
+---
+
 ## 📊 Projects (Coming Soon)
 
 - HR Analytics using SQL
