@@ -41,6 +41,7 @@ Each folder contains:
 - SQL Clauses
 - SQL Operators  
 ✔ Practiced 15 SQL queries
+✔ Documented interview Q&A
 
 ---
 
