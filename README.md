@@ -33,18 +33,30 @@ Each folder contains:
 
 ## 📅 Progress Tracker
 
-### Week 1
+### Week 1 (In Progress)
+
+#### Day 1 ✅
 - SQL Introduction
 - SQL Statements
 - SQL Clauses
 - SQL Operators  
-✔ Practiced basic queries
+✔ Practiced 15 SQL queries
 
-### Week 2
-- Joins
+---
+
+#### Day 2 (Next)
+- SQL Joins (INNER, LEFT, RIGHT)
+- Practice JOIN queries
+
+---
+
+### Upcoming
+
+#### Week 2
 - Aggregations (GROUP BY, HAVING)
+- Filtering grouped data
 
-### Week 3 (Planned)
+#### Week 3
 - Subqueries
 - Window Functions
 
