@@ -13,7 +13,7 @@ Used to filter rows based on conditions.
 SELECT name
 FROM world
 WHERE population >= 200000000;
-
+```
 ---
 
 ## 🔹 Using IN (Multiple Values)
@@ -22,7 +22,7 @@ WHERE population >= 200000000;
 SELECT name, population
 FROM world
 WHERE name IN ('France', 'Germany', 'Italy');
-
+```
 ---
 
 ## 🔹 Pattern Matching (LIKE)
@@ -31,14 +31,14 @@ WHERE name IN ('France', 'Germany', 'Italy');
 SELECT name
 FROM world
 WHERE name LIKE '%United%';
-
+```
 ---
 ## 🔹 Calculations in SQL
 
 ```sql
 SELECT name, (gdp/population) AS pc_gdp
 FROM world;
-
+```
 
 ---
 
@@ -47,7 +47,7 @@ FROM world;
 ```sql
 SELECT name, (population/1000000) AS population_millions
 FROM world;
-
+```
 ---
 
 ## 🔹 Logical Conditions (AND, OR)
@@ -56,7 +56,7 @@ FROM world;
 SELECT name
 FROM world
 WHERE area > 3000000 OR population > 250000000;
-
+```
 ---
 
 ## 🔹 Complex Logic (XOR Condition)
@@ -66,7 +66,7 @@ SELECT name
 FROM world
 WHERE (area > 3000000 OR population > 250000000)
 AND NOT (area > 3000000 AND population > 250000000);
-
+```
 ---
 
 ## 🔹 Rounding Values
@@ -74,7 +74,7 @@ AND NOT (area > 3000000 AND population > 250000000);
 ```sql
 SELECT name, ROUND((gdp/population), -3) AS pc_gdp
 FROM world;
-
+```
 ---
 
 ## 🔹 String Functions
@@ -83,7 +83,7 @@ FROM world;
 SELECT name, capital
 FROM world
 WHERE LEN(name) = LEN(capital);
-
+```
 ---
 
 ## 🔹 Character Matching
