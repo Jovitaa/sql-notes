@@ -40,14 +40,24 @@ Each folder contains:
 - SQL Statements
 - SQL Clauses
 - SQL Operators  
-✔ Practiced 15 SQL queries
-✔ Documented interview Q&A
+✔ Practiced 15 SQL queries  
+✔ Documented interview Q&A  
 
 ---
 
-#### Day 2 (Next)
+#### Day 2 ✅
+- Advanced Query Practice (SQLZoo – World Dataset)
+- Filtering using WHERE, IN, LIKE
+- Logical conditions (AND, OR, XOR)
+- Derived calculations (GDP per capita)
+- String functions (LEN, LEFT)
+✔ Practiced 12+ real-world SQL queries  
+
+---
+
+#### Day 3 (Next)
 - SQL Joins (INNER, LEFT, RIGHT)
-- Practice JOIN queries
+- Practice JOIN queries  
 
 ---
 
@@ -60,7 +70,6 @@ Each folder contains:
 #### Week 3
 - Subqueries
 - Window Functions
-
 ---
 
 ## 💻 Practice Approach
