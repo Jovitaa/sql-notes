@@ -1,6 +1,7 @@
 -- =========================================
 -- DAY 1 SQL PRACTICE (BASICS)
 -- Concepts: SELECT, WHERE, ORDER BY, Operators
+-- Source: SQLZoo
 -- =========================================
 
 
@@ -9,7 +10,6 @@
 -- ==================================================
 
 
--- Source: SQLZoo
 -- Concept: SELECT + WHERE
 -- Difficulty: Easy
 -- Question:
@@ -27,7 +27,6 @@ WHERE name = 'Germany';
 --------------------------------------------------
 
 
--- Source: SQLZoo
 -- Concept: SELECT + IN Operator
 -- Difficulty: Easy
 -- Question:
@@ -45,7 +44,6 @@ WHERE name IN ('Sweden', 'Norway', 'Denmark');
 --------------------------------------------------
 
 
--- Source: SQLZoo
 -- Concept: BETWEEN Operator
 -- Difficulty: Easy
 -- Question:
@@ -69,7 +67,6 @@ WHERE area BETWEEN 200000 AND 250000;
 -- ==================================================
 
 
--- Source: SQLZoo
 -- Concept: BETWEEN + Filtering
 -- Difficulty: Easy
 -- Question:
@@ -87,7 +84,6 @@ WHERE population BETWEEN 1000000 AND 1250000;
 --------------------------------------------------
 
 
--- Source: SQLZoo
 -- Concept: LIKE Operator
 -- Difficulty: Easy
 -- Question:
@@ -105,7 +101,6 @@ WHERE name LIKE 'Al%';
 --------------------------------------------------
 
 
--- Source: SQLZoo
 -- Concept: LIKE + OR
 -- Difficulty: Medium
 -- Question:
@@ -124,7 +119,6 @@ OR name LIKE '%l';
 --------------------------------------------------
 
 
--- Source: SQLZoo
 -- Concept: String Functions + Filtering
 -- Difficulty: Medium
 -- Question:
@@ -143,7 +137,6 @@ AND region = 'Europe';
 --------------------------------------------------
 
 
--- Source: SQLZoo
 -- Concept: Calculated Columns
 -- Difficulty: Easy
 -- Question:
@@ -160,7 +153,6 @@ WHERE population = 64000;
 --------------------------------------------------
 
 
--- Source: SQLZoo
 -- Concept: AND Operator
 -- Difficulty: Medium
 -- Question:
@@ -178,7 +170,6 @@ AND population < 10000000;
 --------------------------------------------------
 
 
--- Source: SQLZoo
 -- Concept: Derived Metrics
 -- Difficulty: Medium
 -- Question:
