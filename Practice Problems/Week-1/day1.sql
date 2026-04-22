@@ -1,76 +1,193 @@
--- SQL Practice – Week 1 Day 1
--- Topic: SQL Basics (SELECT, Clauses, Operators)
+-- =========================================
+-- DAY 1 SQL PRACTICE (BASICS)
+-- Concepts: SELECT, WHERE, ORDER BY, Operators
+-- =========================================
 
--- Q1: Retrieve all columns from the world table
-SELECT *
-FROM world;
 
--- Q2: Retrieve name, population, and area of all countries
-SELECT name, population, area
-FROM world;
+-- ==================================================
+-- PRACTICE PROBLEMS
+-- ==================================================
 
--- Q3: Find countries with population greater than 100 million
+
+-- Source: SQLZoo
+-- Concept: SELECT + WHERE
+-- Difficulty: Easy
+-- Question:
+-- Modify the query to show the population of Germany.
+
+SELECT population
+FROM world
+WHERE name = 'Germany';
+
+-- Tip:
+-- WHERE clause filters rows based on a condition.
+-- Use quotes for text/string values.
+
+
+--------------------------------------------------
+
+
+-- Source: SQLZoo
+-- Concept: SELECT + IN Operator
+-- Difficulty: Easy
+-- Question:
+-- Show the name and population for Sweden, Norway, and Denmark.
+
 SELECT name, population
 FROM world
-WHERE population > 100000000;
+WHERE name IN ('Sweden', 'Norway', 'Denmark');
 
--- Q4: Find countries with area less than 500,000
+-- Tip:
+-- IN is cleaner than multiple OR conditions.
+-- Useful when matching multiple values.
+
+
+--------------------------------------------------
+
+
+-- Source: SQLZoo
+-- Concept: BETWEEN Operator
+-- Difficulty: Easy
+-- Question:
+-- Show country name and area for countries with area between 200000 and 250000.
+
 SELECT name, area
 FROM world
-WHERE area < 500000;
+WHERE area BETWEEN 200000 AND 250000;
 
--- Q5: Find countries with population > 50M AND area > 1M
-SELECT name, population, area
-FROM world
-WHERE population > 50000000 AND area > 1000000;
+-- Tip:
+-- BETWEEN includes boundary values.
+-- Equivalent to:
+-- area >= 200000 AND area <= 250000
 
--- Q6: Find countries with population > 200M OR area > 3M
+
+--------------------------------------------------
+
+
+-- ==================================================
+-- QUIZ QUESTIONS
+-- ==================================================
+
+
+-- Source: SQLZoo
+-- Concept: BETWEEN + Filtering
+-- Difficulty: Easy
+-- Question:
+-- Show countries with population between 1,000,000 and 1,250,000.
+
 SELECT name, population
 FROM world
-WHERE population > 200000000 OR area > 3000000;
+WHERE population BETWEEN 1000000 AND 1250000;
 
--- Q7: Retrieve details for specific countries (India, China, United States)
+-- Tip:
+-- BETWEEN works for numeric ranges.
+-- Very useful in filtering grouped ranges.
+
+
+--------------------------------------------------
+
+
+-- Source: SQLZoo
+-- Concept: LIKE Operator
+-- Difficulty: Easy
+-- Question:
+-- Show countries whose name starts with 'Al'.
+
 SELECT name, population
 FROM world
-WHERE name IN ('India', 'China', 'United States');
+WHERE name LIKE 'Al%';
 
--- Q8: Find countries with population between 50M and 200M
-SELECT name, population
-FROM world
-WHERE population BETWEEN 50000000 AND 200000000;
+-- Tip:
+-- % = wildcard for multiple characters.
+-- 'Al%' means starts with Al.
 
--- Q9: Find countries whose name starts with 'A'
+
+--------------------------------------------------
+
+
+-- Source: SQLZoo
+-- Concept: LIKE + OR
+-- Difficulty: Medium
+-- Question:
+-- Show countries ending in A or L.
+
 SELECT name
 FROM world
-WHERE name LIKE 'A%';
+WHERE name LIKE '%a'
+OR name LIKE '%l';
 
--- Q10: Find countries whose population is NOT greater than 100M
-SELECT name, population
+-- Tip:
+-- '%a' = ends with a
+-- '%l' = ends with l
+
+
+--------------------------------------------------
+
+
+-- Source: SQLZoo
+-- Concept: String Functions + Filtering
+-- Difficulty: Medium
+-- Question:
+-- Show European countries with exactly 5-letter names.
+
+SELECT name, LENGTH(name)
 FROM world
-WHERE NOT population > 100000000;
+WHERE LENGTH(name) = 5
+AND region = 'Europe';
 
--- Q11: Calculate GDP per capita for each country
-SELECT name, (gdp/population) AS gdp_per_capita
-FROM world;
+-- Tip:
+-- LENGTH() counts number of characters.
+-- Combine functions with filters.
 
--- Q12: Convert population into millions
-SELECT name, population/1000000 AS population_millions
-FROM world;
 
--- Q13: List countries sorted by population (descending)
-SELECT name, population
+--------------------------------------------------
+
+
+-- Source: SQLZoo
+-- Concept: Calculated Columns
+-- Difficulty: Easy
+-- Question:
+-- Show country name and doubled area where population = 64000.
+
+SELECT name, area * 2
 FROM world
-ORDER BY population DESC;
+WHERE population = 64000;
 
--- Q14: Show top 10 most populated countries
-SELECT name, population
-FROM world
-ORDER BY population DESC
-LIMIT 10;
+-- Tip:
+-- SQL allows calculations directly inside SELECT.
 
--- Q15: Find countries with population > 50M and name containing 'a', sorted by population
-SELECT name, population, area
+
+--------------------------------------------------
+
+
+-- Source: SQLZoo
+-- Concept: AND Operator
+-- Difficulty: Medium
+-- Question:
+-- Show countries with area > 50000 and population < 10000000.
+
+SELECT name, area, population
 FROM world
-WHERE population > 50000000
-AND name LIKE '%a%'
-ORDER BY population DESC;
+WHERE area > 50000
+AND population < 10000000;
+
+-- Tip:
+-- AND requires both conditions to be true.
+
+
+--------------------------------------------------
+
+
+-- Source: SQLZoo
+-- Concept: Derived Metrics
+-- Difficulty: Medium
+-- Question:
+-- Show population density for China, Australia, Nigeria, and France.
+
+SELECT name, population / area
+FROM world
+WHERE name IN ('China', 'Nigeria', 'France', 'Australia');
+
+-- Tip:
+-- Population density = population / area.
+-- Derived metrics are common in analytics.
