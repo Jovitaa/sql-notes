@@ -32,32 +32,60 @@ This repository documents my structured learning journey — from SQL basics to 
 
 ## 📅 Progress Tracker
 
-### ✅ Day 1 – SQL Basics
+### ✅ Day 1 – SQL Basics (SQLZoo)
 
-- SQL Introduction  
-- SQL Statements  
-- SQL Clauses  
-- SQL Operators  
-✔ Practiced 15+ SQL queries  
-✔ Covered filtering, conditions, sorting, and calculations  
+**Topics Covered:**
+- SELECT, WHERE  
+- IN, BETWEEN  
+- LIKE operator  
+- Basic filtering & conditions  
+
+**Practice Completed:**
+- ✔ Solved SQLZoo practice + quiz questions  
+- ✔ Practiced filtering and range conditions  
+- ✔ Learned pattern matching using LIKE  
 
 ---
 
-### 🔄 Day 2 – Query Patterns (In Progress)
+### ✅ Day 2 – Query Patterns (SQLZoo)
 
-- Filtering using WHERE, IN, LIKE  
-- Logical conditions (AND, OR, XOR)  
+**Topics Covered:**
+- WHERE filtering  
+- AND, OR, XOR  
 - Derived calculations  
 - String functions  
-✔ Practicing real-world SQL queries  
+
+**Practice Completed:**
+- ✔ Practiced real-world filtering logic  
+- ✔ Solved SQLZoo query pattern exercises  
+- ✔ Added Day 2 structured SQL practice  
+
+---
+
+### ✅ Day 3 – Nobel Dataset Practice (SQLZoo)
+
+**Topics Covered:**
+- Multi-condition filtering  
+- ORDER BY sorting  
+- LIKE patterns  
+- Escaping characters  
+- Boolean sorting logic  
+
+**Practice Completed:**
+- ✔ Solved 14 practice problems  
+- ✔ Completed SQLZoo quiz questions  
+- ✔ Improved SQL filtering and sorting skills  
 
 ---
 
 ### ⏳ Upcoming
 
-- Day 3 – Joins (INNER, LEFT, RIGHT)  
-- Aggregations (GROUP BY, HAVING)  
-- Subqueries & Window Functions  
+- SQL Joins  
+- GROUP BY & HAVING  
+- Subqueries  
+- Window Functions  
+
+---
 
 ---
 
